@@ -95,7 +95,7 @@ The preamble of your LaTeX document should look like this:
         \end{keyword}
 
         \begin{keyword}
-            \kwd{sample}
+            \kwd{Sample}
             \kwd{\LaTeX}
         \end{keyword}
 
