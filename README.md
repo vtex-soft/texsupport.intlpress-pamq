@@ -36,7 +36,7 @@ The following files are given in the repository (or directly in `*.zip` archive)
 * Use the file `pamq-template.tex` to start your article as a template.
 * Use the file `pamq-sample.tex` as a reference for how to prepare a topmatter of your article.
 
-## Recomended usage of `ipart` package
+## Recommended usage of `ipart` package
 
 Use `pamq-template.tex` as a template.
 
@@ -95,7 +95,7 @@ The preamble of your LaTeX document should look like this:
         \end{keyword}
 
         \begin{keyword}
-            \kwd{sample}
+            \kwd{Sample}
             \kwd{\LaTeX}
         \end{keyword}
 
