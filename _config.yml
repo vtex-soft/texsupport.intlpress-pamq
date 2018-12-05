@@ -3,3 +3,4 @@ description: TeX related material for the manuscript preparation for the
              International Press journal Pure and Applied Mathematics Quarterly
              (PAMQ)
 show_downloads: true
+theme: jekyll-theme-minimal
