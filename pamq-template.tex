@@ -8,11 +8,11 @@
 % All other lines should be ignored.  After editing, there should be
 % no instances of ??? after this line.
 
-% Journal options: pamq,keywordsasfootnote
-\documentclass[pamq,keywordsasfootnote]{ipart}
+% Journal options: pamq
+% Bibliography options: [authoryear,nonatbib]
+\documentclass[pamq]{ipart}
 
 %\usepackage{amsthm,amsmath}
-%\usepackage[numbers,square]{natbib}
 %\RequirePackage{hyperref}
 
 % will be filled by editor:
@@ -23,8 +23,8 @@
 \lastpage{1}
 %\arxiv{}
 
-% put your definitions there:
 \startlocaldefs
+% Put your definitions here
 \endlocaldefs
 
 \begin{document}
@@ -36,16 +36,20 @@
 \thankstext{T1}{???}
 
 \begin{aug}
-% indicate corresponding author with \thanksref{}
 % \author{\fnms{John} \snm{Smith}\thanksref{t2}\ead[label=e1]{smith@foo.com}\ead[label=e2,url]{www.foo.com}}
-% \thankstext{t2}{Corresponding author.}
+% \thankstext{t2}{The author is supported by ...}
 % \address{line 1\\ line 2\\ \printead{e1}\\\printead{e2}}
 
 \author{\fnms{???} \snm{???}\ead[label=e1]{???}}
 \address{???\\\printead{e1}}
-%\and
-%\author{\fnms{???} \snm{???}\ead[label=e2]{???}}
+%\author{\fnms{???} \snm{???}\thanksref{t2}\ead[label=e2]{???}}
 %\address{???\\\printead{e2}}
+%\and
+%\author{\fnms{???} \snm{???}%
+%        \ead[label=e3]{???}%
+%        \ead[label=u1,url]{???}}
+%\address{???\\\printead{e3}\\\printead{u1}}
+%\thankstext{t2}{The author is supported by ...}
 \end{aug}
 % history:
 %\received{\sday{3} \smonth{1} \syear{2018}}
