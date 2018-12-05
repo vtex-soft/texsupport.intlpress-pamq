@@ -1,5 +1,3 @@
-# LaTeX author support for the International Press journal *Pure and Applied Mathematics Quarterly* (*PAMQ*)
-
 ## Table of Contents
 
 * [About](#about)
