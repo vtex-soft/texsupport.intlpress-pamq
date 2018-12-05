@@ -1,4 +1,4 @@
-#
+# International Press journal PAMQ author support
 
 ## Table of Contents
 
