@@ -42,9 +42,10 @@ Use `pamq-template.tex` as a template.
 
 ### Document class options
 
-For the PAMQ journal `pamq` option must be set in a `\documentclass[]{ipart}`:
+For the PAMQ journal `pamq` and `keywordsasfootnote` options must be set
+in a `\documentclass[]{ipart}`:
 ```latex
-\documentclass[pamq]{ipart}
+\documentclass[pamq,keywordsasfootnote]{ipart}
 ```
 
 For bibliography references output and citations a `natbib` package
@@ -56,7 +57,7 @@ It provides numbered citations.
 
 In case author-year citation is required, provide the `authoryear` option:
 ```latex
-\documentclass[pamq,authoryear]{ipart}
+\documentclass[pamq,keywordsasfootnote,authoryear]{ipart}
 ```
 All `natbib` package options can be provided in this way.
 
@@ -64,14 +65,14 @@ In case some other bibliography package is used
 which is not compatible with `natbib` package,
 one can disable the latter with the option `nonatbib`:
 ```latex
-\documentclass[pamq,nonatbib]{ipart}
+\documentclass[pamq,keywordsasfootnote,nonatbib]{ipart}
 ```
 ### LaTeX document preamble content
 
 The preamble of your LaTeX document should look like this:
 
 ```latex
-\documentclass[pamq]{ipart}
+\documentclass[pamq,keywordsasfootnote]{ipart}
 
 \arxiv{math.PR/0000000}
 
