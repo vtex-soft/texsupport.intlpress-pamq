@@ -5,7 +5,6 @@
 * [About](#about)
 * [Package content](#package-content)
 * [Setup](#setup)
-* [Options](#options)
 * [Recomended usage of `ipart` package](#recomended-usage-of-ipart-package)
 * [Submission](#submission)
 * [Bug reports](#bug-reports)
