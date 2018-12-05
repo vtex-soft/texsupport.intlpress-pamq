@@ -76,52 +76,52 @@ The preamble of your LaTeX document should look like this:
 
 \begin{document}
 
-    \begin{frontmatter}
+\begin{frontmatter}
 
-        \title{A Sample Document\protect\thanksref{T1}}
-        \thankstext{T1}{Footnote to the title with the `thankstext' command.}
+\title{A Sample Document\protect\thanksref{T1}}
+\thankstext{T1}{Footnote to the title with the `thankstext' command.}
 
-        \begin{aug}
-            \author{\fnms{First} \snm{Author}\thanksref{t2}\ead[label=e1]{first@somewhere.com}},
-            \address{Address of the First Author\\
-                     Country\\
-                     \printead{e1}}
-            \author{\fnms{Second} \snm{Author}\ead[label=e2]{second@somewhere.com}}
-            \address{Address of the Second authors\\
-                     Country\\
-                     \printead{e2}}
-            \and
-            \author{\fnms{Third} \snm{Author}
-                    \ead[label=e3]{third@somewhere.com}%
-                    \ead[label=u1,url]{http://www.foo.com}}
-            \address{Address of the Third author\\
-                     Country\\
-                     \printead{e3}\\
-                     \printead{u1}}
+\begin{aug}
+\author{\fnms{First} \snm{Author}\thanksref{t2}\ead[label=e1]{first@somewhere.com}},
+\address{Address of the First Author\\
+         Country\\
+         \printead{e1}}
+\author{\fnms{Second} \snm{Author}\ead[label=e2]{second@somewhere.com}}
+\address{Address of the Second authors\\
+         Country\\
+         \printead{e2}}
+\and
+\author{\fnms{Third} \snm{Author}
+        \ead[label=e3]{third@somewhere.com}%
+        \ead[label=u1,url]{http://www.foo.com}}
+\address{Address of the Third author\\
+         Country\\
+         \printead{e3}\\
+         \printead{u1}}
 
-            \thankstext{t2}{Footnote to the first author with the `thankstext' command.}
-        \end{aug}
+\thankstext{t2}{Footnote to the first author with the `thankstext' command.}
+\end{aug}
 
-        \begin{abstract}
-            ...
-        \end{abstract}
+\begin{abstract}
+...
+\end{abstract}
 
-        \begin{keyword}[class=AMS]  % please indicate appropriate AMS codes
-            \kwd[Primary ]{00K00}
-            \kwd{00K01}
-            \kwd[; secondary ]{00K02}
-        \end{keyword}
+\begin{keyword}[class=AMS]  % please indicate appropriate AMS codes
+\kwd[Primary ]{00K00}
+\kwd{00K01}
+\kwd[; secondary ]{00K02}
+\end{keyword}
 
-        \begin{keyword}
-            \kwd{Sample}
-            \kwd{\LaTeX}
-        \end{keyword}
+\begin{keyword}
+\kwd{Sample}
+\kwd{\LaTeX}
+\end{keyword}
 
-        \tableofcontents
+\tableofcontents
 
-    \end{frontmatter}
+\end{frontmatter}
 
-    Your publication content
+Your publication content
 
 \end{document}
 ```
