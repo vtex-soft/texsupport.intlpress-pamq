@@ -25,7 +25,7 @@ The following files are given in the repository (or directly in `*.zip` archive)
   and one of provided BibTeX styles allows you to get the final format of the bibliography.
 * `pamq-template.tex` - topmatter template (should be used for article preparation);
 * `pamq-sample.tex` - journal sample article;
-* `pamq-sample.pdf` - journal sample article (PDF file);
+* `pamq-sample.pdf` - journal sample article (`PDF` file);
 
 [^1]: The following link provides information about BibTeX usage: [http://www.bibtex.org/Using/](http://www.bibtex.org/Using/).
 
@@ -66,6 +66,7 @@ one can disable the latter with the option `nonatbib`:
 ```latex
 \documentclass[pamq,keywordsasfootnote,nonatbib]{ipart}
 ```
+
 ### LaTeX document preamble content
 
 The preamble of your LaTeX document should look like this:
@@ -88,18 +89,17 @@ The preamble of your LaTeX document should look like this:
                      Country\\
                      \printead{e1}}
             \author{\fnms{Second} \snm{Author}\ead[label=e2]{second@somewhere.com}}
-            \address{Address of the Second authors\\
+            \address{Address of the Second Author\\
                      Country\\
                      \printead{e2}}
             \and
             \author{\fnms{Third} \snm{Author}
                     \ead[label=e3]{third@somewhere.com}%
                     \ead[label=u1,url]{http://www.foo.com}}
-            \address{Address of the Third author\\
+            \address{Address of the Third Author\\
                      Country\\
                      \printead{e3}\\
                      \printead{u1}}
-
             \thankstext{t2}{Footnote to the first author with the `thankstext' command.}
         \end{aug}
 
@@ -135,7 +135,7 @@ If `hyperref` package is used, they will be made into hyperlinks;
 
 ## Submission
 
-Submit one single file as a zip archive.
+Submit one single file as a `ZIP` archive.
 Pack your root folder `<your-project-name>` with files and subfolders.
 
 ## Bug reports
