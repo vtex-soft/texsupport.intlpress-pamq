@@ -20,9 +20,9 @@ The following files are given in the repository (or directly in `*.zip` archive)
 
 * `ipart.cls`, `imsart.sty` - LaTeX style files designed for International Press journal articles.
   Please do not change them. These files are already loaded in the respective template files;
-* `imsart-number.bst`, `imsart-nameyear.bst` - suggested BibTeX[^1] related bibliography styles.
+* `plain.bst` - suggested BibTeX[^1] related bibliography style.
   If your bibliography is structured in BibTeX format, loading your `*.bib` file
-  and one of provided BibTeX styles allows you to get the final format of the bibliography.
+  and provided BibTeX style allows you to get the final format of the bibliography.
 * `pamq-template.tex` - topmatter template (should be used for article preparation);
 * `pamq-sample.tex` - journal sample article;
 * `pamq-sample.pdf` - journal sample article (`PDF` file);
@@ -31,7 +31,7 @@ The following files are given in the repository (or directly in `*.zip` archive)
 
 ## Setup
 * Clone the repository or download the `*.zip` archive. Rename the package to `<your-project-name>`.
-* Install `ipart.cls`, `imsart.sty`, `imsart-number.bst`, `imsart-nameyear.bst` in your TeX system (suggested directory: `ipart`).
+* Install `ipart.cls`, `imsart.sty`, `plain.bst` in your TeX system (suggested directory: `ipart`).
 * Use the file `pamq-template.tex` to start your article as a template.
 * Use the file `pamq-sample.tex` as a reference for how to prepare a topmatter of your article.
 
