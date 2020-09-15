@@ -820,11 +820,15 @@
        {%
           \ead@size
           \def\null{}%
-          \ims@href{%
-              \ead@prefix
-              \saferef{\ead@ref @\ead@type}%
-            }{%
+          \@ifundefined{r@\ead@ref @\ead@type}{%
               \ims@href@text
+            }{%
+              \ims@href{%
+                  \ead@prefix
+                  \saferef{\ead@ref @\ead@type}%
+                }{%
+                  \ims@href@text
+                }%
             }%
        }%
        \@ifundefined{ead@text}{}{\let\prev@ead@text\ead@text}}}%                        
