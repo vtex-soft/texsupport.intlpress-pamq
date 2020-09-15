@@ -68,7 +68,7 @@
 % Requires Latex2e, ver.2000.06
 
 \def\imsfmt@name{imsart}
-\def\imsfmt@version{2019/02/20}
+\def\imsfmt@version{2020/09/15}
 
 \ProvidesFile{imsart.sty}
         [\imsfmt@version\space IMS article style (VS)]
@@ -814,7 +814,19 @@
        \ifx\prev@ead@text\ead@text\let\ead@text\relax\fi%
        \if@printead@opt\ifnum\@tempcnta>1\@latex@error{Command \@backslashchar printead[]{e1} could have only one parameter "e1"!}\@eha\fi%
        \else\@ifundefined{r@\ead@ref @\ead@type text}{\def\ims@href@text{\@ifundefined{r@\ead@ref thanks}{}{\thanksref{\ead@ref}}\saferef{\ead@ref @\ead@type}}}{\def\ims@href@text{\@ifundefined{r@\ead@ref thanks}{}{\thanksref{\ead@ref}}\saferef{\ead@ref @\ead@type text}}}\fi%
-       \ifnot@ead@star\ead@text\fi{\ead@size\def\null{}\ims@href{\ead@prefix\saferef{\ead@ref @\ead@type}}{\ims@href@text}}%
+       \ifnot@ead@star
+          \ead@text
+       \fi
+       {%
+          \ead@size
+          \def\null{}%
+          \ims@href{%
+              \ead@prefix
+              \saferef{\ead@ref @\ead@type}%
+            }{%
+              \ims@href@text
+            }%
+       }%
        \@ifundefined{ead@text}{}{\let\prev@ead@text\ead@text}}}%                        
 }}
 
