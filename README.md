@@ -18,7 +18,7 @@ Author support service provides LaTeX style files and `*.tex` file templates des
 
 The following files are given in the repository (or directly in `*.zip` archive):
 
-* `ipart.cls`, `imsart.sty` - LaTeX style files designed for International Press journal articles.
+* `ipart.cls`, `ipart-layout-*.sty` - LaTeX style files designed for International Press journal articles.
   Please do not change them. These files are already loaded in the respective template files;
 * `plain.bst` - suggested BibTeX[^1] related bibliography style.
   If your bibliography is structured in BibTeX format, loading your `*.bib` file
@@ -31,7 +31,7 @@ The following files are given in the repository (or directly in `*.zip` archive)
 
 ## Setup
 * Clone the repository or download the `*.zip` archive. Rename the package to `<your-project-name>`.
-* Install `ipart.cls`, `imsart.sty`, `plain.bst` in your TeX system (suggested directory: `ipart`).
+* Install `ipart.cls`, `ipart-layout-*.sty`, `plain.bst` in your TeX system (suggested directory: `ipart`).
 * Use the file `pamq-template.tex` to start your article as a template.
 * Use the file `pamq-sample.tex` as a reference for how to prepare a topmatter of your article.
 
@@ -41,10 +41,10 @@ Use `pamq-template.tex` as a template.
 
 ### Document class options
 
-For the PAMQ journal `pamq` and `keywordsasfootnote` options must be set
+For the PAMQ journal `pamq` option must be set
 in a `\documentclass[]{ipart}`:
 ```latex
-\documentclass[pamq,keywordsasfootnote]{ipart}
+\documentclass[pamq]{ipart}
 ```
 
 For bibliography references output and citations a `natbib` package
@@ -56,7 +56,7 @@ It provides numbered citations.
 
 In case author-year citation is required, provide the `authoryear` option:
 ```latex
-\documentclass[pamq,keywordsasfootnote,authoryear]{ipart}
+\documentclass[pamq,authoryear]{ipart}
 ```
 All `natbib` package options can be provided in this way.
 
@@ -64,7 +64,7 @@ In case some other bibliography package is used
 which is not compatible with `natbib` package,
 one can disable the latter with the option `nonatbib`:
 ```latex
-\documentclass[pamq,keywordsasfootnote,nonatbib]{ipart}
+\documentclass[pamq,nonatbib]{ipart}
 ```
 
 ### LaTeX document preamble content
@@ -72,7 +72,7 @@ one can disable the latter with the option `nonatbib`:
 The preamble of your LaTeX document should look like this:
 
 ```latex
-\documentclass[pamq,keywordsasfootnote]{ipart}
+\documentclass[pamq]{ipart}
 
 \arxiv{math.PR/0000000}
 
