@@ -8,7 +8,7 @@
 %% 
 \NeedsTeXFormat{LaTeX2e}
 \def\ipfmt@name{ipart-layout-pamq}
-\def\ipfmt@version{2020/10/14 v2.0.1}
+\def\ipfmt@version{2020/11/23 v2.0.2}
 \ProvidesPackage{\ipfmt@name}
     [\ipfmt@version INTLPRESS journal PAMQ layout style]
 
@@ -210,7 +210,9 @@
 %%  ======= FONT =======
 %%
 \RequirePackage[T1]{fontenc}
-\RequirePackage{lmodern}
+\ifdefined\HCode\else
+  \RequirePackage{lmodern}
+\fi
 
 %%  Change to main font
 \renewcommand\normalsize{%
@@ -260,6 +262,7 @@
 \def\LARGE{\@setfontsize\LARGE{16\p@}{18\p@}}
 \def\huge{\@setfontsize\huge{24\p@}{26\p@}}
 \def\Huge{\@setfontsize\Huge{25\p@}{27\p@}}
+
 
 \PassOptionsToPackage{leqno,cmex10}{amsmath}
 \RequirePackage{amsmath}
@@ -354,11 +357,13 @@
 %%  arXiv
 \def\arxiv#1{%
     \gdef\@arxiv{#1}%
-    \AtBeginDocument{%
-        \safe@footnotetext{%
-            \url@fmt{arXiv: }{}{#1}{\arxiv@base\@arxiv}%
+    \ifdefined\HCode\else
+        \AtBeginDocument{%
+            \safe@footnotetext{%
+                \url@fmt{arXiv: }{}{#1}{\arxiv@base\@arxiv}%
+                }%
             }%
-        }%
+        \fi
     }
 \let\@arxiv\relax
 %%  http://arxiv.org/abs/math.PR/0603300
@@ -1581,6 +1586,8 @@
 \renewcommand\@dotsep{10000}
 \patchcmd{\@dottedtocline}{\vskip \z@ \@plus.2\p@}{\smallbreak}{}{}
 \patchcmd{\@dottedtocline}{\normalfont}{\bfseries}{}{}
+\def\@pnumwidth{2.5em}
+\def\@tocrmarg{3em}
 
 \def\enable@tableofcontents{%
     \gdef\tableofcontents{%
