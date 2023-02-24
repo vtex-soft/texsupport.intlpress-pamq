@@ -8,7 +8,7 @@
 %% 
 \NeedsTeXFormat{LaTeX2e}
 \def\ipfmt@name{ipart-layout-pamq}
-\def\ipfmt@version{2023/02/23 v2.0.4}
+\def\ipfmt@version{2023/02/24 v2.0.5}
 \ProvidesPackage{\ipfmt@name}
     [\ipfmt@version INTLPRESS journal PAMQ layout style]
 
@@ -969,7 +969,7 @@
             \do\~{\hbox{\m@th$\mathchar126$}}%
             }%
         %%  Ensuring \ttfamily font
-        \expandafter\protect\csname url@ttstyle\endcsname
+%        \expandafter\protect\csname url@ttstyle\endcsname
     \fi
     }
 
@@ -1128,9 +1128,9 @@
             \@latex@error{Error: there are no address with number '#1'!}{??}%
             }{%
                 \address@font
-                \begin{tabular}[t]{@{}l@{}}
+                \begin{tabular}[t]{@{}p{\textwidth}@{}}
                     \expandafter\expandafter\expandafter\csname @author@\@tmp\endcsname\\
-                    \expandafter\expandafter\expandafter\the\csname @address@\@tmp\endcsname
+                    \raggedright\expandafter\expandafter\expandafter\the\csname @address@\@tmp\endcsname
                 \end{tabular}%
                 }%
     \egroup
