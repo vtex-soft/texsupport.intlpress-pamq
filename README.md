@@ -12,7 +12,7 @@
 ## About
 
 Author support service provides LaTeX style files and `*.tex` file templates designed for International Press journal
-[Pure and Applied Mathematics Quarterly (PAMQ)](http://www.intlpress.com/PAMQ/) articles.
+[Pure and Applied Mathematics Quarterly (PAMQ)](http://www.intlpress.com/PAMQ) articles.
 
 ## Package content
 
