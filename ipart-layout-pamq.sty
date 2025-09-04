@@ -8,7 +8,7 @@
 %% 
 \NeedsTeXFormat{LaTeX2e}
 \def\ipfmt@name{ipart-layout-pamq}
-\def\ipfmt@version{2025/03/28 v2.0.8}
+\def\ipfmt@version{2025/09/03 v2.0.9}
 \ProvidesPackage{\ipfmt@name}
     [\ipfmt@version INTLPRESS journal PAMQ layout style]
 
@@ -270,6 +270,9 @@
 \RequirePackage{amsthm}
 \RequirePackage{amssymb}
 \RequirePackage{amsfonts}
+\ifdefined\noaccents@
+    \noaccents@
+\fi
 %%
 %%  ======= HEADERS =======
 %%
