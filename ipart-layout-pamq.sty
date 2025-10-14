@@ -8,7 +8,7 @@
 %% 
 \NeedsTeXFormat{LaTeX2e}
 \def\ipfmt@name{ipart-layout-pamq}
-\def\ipfmt@version{2025/09/03 v2.0.9}
+\def\ipfmt@version{2025/10/14 v2.0.10}
 \ProvidesPackage{\ipfmt@name}
     [\ipfmt@version INTLPRESS journal PAMQ layout style]
 
@@ -334,7 +334,7 @@
 \def\copyright@volume{\@volume, \@issue, \@pagerange, \@pubyear}
 \def\copyright@info{\copyright@volume\break}
 \def\copyright@text{%
-    \url@fmt{}{\copyright@url@font}{\journal@name}{\journal@url}%
+    {\copyright@url@font\journal@name}%
     \print@copyrightowner\break
     \@ifundefined{volume@title}{}{\textbf{\volume@title}\break}%
     \copyright@doi
